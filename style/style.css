@@ -59,12 +59,20 @@ button {
 }
 
 .btn-primary {
-    background-color: var(--dark);
+    background-color: orange;
+    border: 1;
+    border-color: darkorange;
     color: var(--white);
     font-weight: 700;
     font-size: 1.25rem;
     padding: 10px 47px;
     border-radius: 12px;
+    cursor: pointer;
+    transition: all o.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: darkorange;
 }
 
 .story-heading {
@@ -81,8 +89,8 @@ button {
 /** end common css **/
 
 .scrolling-text {
-    width: 300px;
-    /* overflow:auto; */
+
+    overflow: hidden;
     white-space: nowrap;
 }
 
@@ -118,6 +126,7 @@ button {
 
 .logo-container h3 {
     font-size: 2rem;
+    display: block;
     color: var(--dark);
 }
 
@@ -154,13 +163,19 @@ button {
 }
 
 .btn-contact {
-    background-color: var(--orange);
+    background-color: orange;
     border: 0;
     font-weight: 500;
     font-size: 1.25rem;
     padding: 10px 60px;
     color: var(--white);
     border-radius: 12px;
+    cursor: pointer;
+    transition: all o.3s ease;
+}
+
+.btn-contact:hover {
+    background-color: darkorange;
 }
 
 .menu-toggle {
@@ -205,11 +220,12 @@ button {
     padding: 24px 0;
 }
 
+
 /** end banner css **/
 
 /** start Standard Curriculum css **/
 .curriculum-section {
-    background-image: url(assets/bg.png);
+    background: url("../assets/bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
@@ -380,9 +396,18 @@ button {
     margin-top: -34px;
 }
 
+.grid-item-2 .story-date {
+    background-color: #e9c03a;
+}
+
 .grid-item-3 .story-date {
     background-color: #5D58F0;
 }
+
+.grid-item-4 .story-date {
+    background-color: #f058dc;
+}
+
 
 .story-card h3 {
     color: var(--black);
@@ -423,6 +448,11 @@ button {
 
 .footer-tag-name {
     display: flex;
+}
+
+.footer-tag-text {
+    padding-left: 8px;
+    padding-right: 8px;
 }
 
 .footer-2nd-grid a {

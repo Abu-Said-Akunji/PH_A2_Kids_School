@@ -24,11 +24,11 @@
                 <h3>ACADEMY</h3>
             </div>
             <!-- Navigation Toggler for Small Screens -->
-            <button class="menu-toggle">
+            <button class="menu-toggle" onclick="toggleMenu()">
                 <i class="fa-solid fa-bars"></i>
             </button>
             <!-- Navigation Links -->
-            <ul class="d-flex">
+            <ul class=" d-flex">
                 <li><a href="">Home</a></li>
                 <li><a href="">About Us</a></li>
                 <li><a href="">Programs</a></li>
@@ -38,7 +38,8 @@
             <button class="btn-contact">Contact</button>
         </nav>
         <div class="scrolling-text">
-            <p class="marquee">KIDS SCHOOL OFFERS ADMISSION FOR JANUARY 2025 FOR PLAYGROUP - CLASS VIII (Session 2024-2025).
+            <p class="marquee">KIDS SCHOOL OFFERS ADMISSION FOR JANUARY 2025 FOR PLAYGROUP - CLASS VIII (Session
+                2024-2025).
                 KINDLY CONTACT @ +880999999999, +8801755555555. [ During 9.00 AM-1.00 PM ]. FORMS ARE AVAILABLE IN THE
                 ADMIN OFFICE AND WEBSITE.</p>
         </div>
@@ -185,6 +186,12 @@
 
     </section>
     <script src="https://kit.fontawesome.com/88ac32cb69.js" crossorigin="anonymous"></script>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('.menu-toggle .d-flex');
+            menu.classList.toggle('open');
+        }
+    </script>
 </body>
 
 </html>
