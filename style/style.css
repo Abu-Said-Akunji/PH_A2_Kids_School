@@ -67,6 +67,13 @@ button {
     border-radius: 12px;
 }
 
+.story-heading {
+    font-size: 2.88rem;
+    line-height: 1.25;
+    color: var(--black);
+    text-align: center;
+}
+
 .d-flex {
     display: flex;
 }
@@ -279,43 +286,41 @@ button {
 /** start our stories css **/
 .stories-section {
     padding: 60px 0;
-    background: url('asset/bg.png'), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+    background: url("../assets/bg.png"), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
 }
 
-.story-heading {
-    font-size: 2.88rem;
-    line-height: 1.25;
-    color: var(--black);
-    text-align: center;
+.story-section h2 {
+    margin-bottom: 80px;
 }
+
 
 .stories-grid {
     display: grid;
     gap: 20px;
     grid-template-columns: 0.48fr 0.26fr 0.26fr;
     grid-template-areas:
-        "story-grid-1 story-grid-2 story-grid-3"
-        "story-grid-1 story-grid-4 story-grid-5";
+        "grid-item-1 grid-item-2 grid-item-3"
+        "grid-item-1 grid-item-4 grid-item-5";
 }
 
 .grid-item-1 {
-    grid-area: story-grid-1;
+    grid-area: grid-item-1;
 }
 
 .grid-item-2 {
-    grid-area: story-grid-2;
+    grid-area: grid-item-2;
 }
 
 .grid-item-3 {
-    grid-area: story-grid-3;
+    grid-area: grid-item-3;
 }
 
 .grid-item-4 {
-    grid-area: story-grid-4;
+    grid-area: grid-item-4;
 }
 
 .grid-item-5 {
-    grid-area: story-grid-5;
+    grid-area: grid-item-5;
 }
 
 .story-card {
@@ -347,13 +352,13 @@ button {
     z-index: 1;
 }
 
-.story-grid-1 .story-date {
+.grid-item-1 .story-date {
     background-color: #3CD8E8;
     padding: 14px 18px;
     margin-top: -34px;
 }
 
-.story-grid-3 .story-date {
+.grid-item-3 .story-date {
     background-color: #5D58F0;
 }
 
@@ -363,12 +368,12 @@ button {
     font-size: 0.96rem;
 }
 
-.story-grid-1 h3 {
+.grid-item-1 h3 {
     margin: 33px 0 41px;
     font-size: 1.5rem;
 }
 
-.story-grid-1 p {
+.grid-item-1 p {
     color: #666666;
 }
 
@@ -376,5 +381,17 @@ button {
     margin: 80px auto 0;
     display: block;
 }
+
+.footer {
+    background-color: #01ACFD;
+    padding: 50px;
+}
+
+/* .footer img {
+    background-color: white;
+    background-size: 50%;
+    background-blend-mode:var(--white);
+} */
+ 
 
 /** end our stories css **/
